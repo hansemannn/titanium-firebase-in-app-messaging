@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
+version: 1.1.0
 apiversion: 4
 architectures: arm64-v8a armeabi-v7a x86 x86_64
 description: titanium-firebase-in-app-messaging
@@ -15,4 +15,4 @@ name: titanium-firebase-in-app-messaging
 moduleid: firebase.inappmessaging
 guid: 1a783c68-e7bc-4be2-8639-d5d014d7a79f
 platform: android
-minsdk: 9.0.3.GA
+minsdk: 9.0.0

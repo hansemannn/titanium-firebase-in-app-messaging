@@ -8,19 +8,117 @@
  */
 package firebase.inappmessaging;
 
-import com.google.firebase.inappmessaging.FirebaseInAppMessaging;
+import androidx.annotation.NonNull;
 
+import com.google.firebase.inappmessaging.FirebaseInAppMessaging;
+import com.google.firebase.inappmessaging.FirebaseInAppMessagingDisplay;
+import com.google.firebase.inappmessaging.FirebaseInAppMessagingDisplayCallbacks;
+import com.google.firebase.inappmessaging.model.Action;
+import com.google.firebase.inappmessaging.model.CardMessage;
+import com.google.firebase.inappmessaging.model.InAppMessage;
+
+import org.appcelerator.kroll.KrollDict;
+import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
+import org.appcelerator.kroll.common.Log;
 
 @Kroll.module(name="TitaniumFirebaseInAppMessaging", id="firebase.inappmessaging")
 public class TitaniumFirebaseInAppMessagingModule extends KrollModule
 {
+	private FirebaseInAppMessagingDisplayCallbacks _firebaseInAppMessagingDisplayCallbacks = null;
+	private Action _primaryAction = null;
+	private Action _secondaryAction = null;
+
 	// Methods
 
 	@Kroll.method
 	public void triggerEvent(String eventName)
 	{
 		FirebaseInAppMessaging.getInstance().triggerEvent(eventName);
+	}
+
+	@Kroll.method
+	public void registerMessageDisplayComponent(KrollFunction callback) {
+		FirebaseInAppMessagingDisplay firebaseInAppMessagingDisplay = (inAppMessage, firebaseInAppMessagingDisplayCallbacks) -> {
+			KrollDict event = new KrollDict();
+
+			_firebaseInAppMessagingDisplayCallbacks = null;
+			_primaryAction = null;
+			_secondaryAction = null;
+
+			// Handle Cards
+			if (inAppMessage instanceof CardMessage) {
+				CardMessage cardMessage = (CardMessage)inAppMessage;
+
+				KrollDict primaryAction = new KrollDict();
+				primaryAction.put("url", cardMessage.getPrimaryAction().getActionUrl());
+				primaryAction.put("title", cardMessage.getPrimaryAction().getButton().getText());
+
+				KrollDict secondaryAction = new KrollDict();
+				if (cardMessage.getSecondaryAction() != null) {
+					secondaryAction.put("url", cardMessage.getSecondaryAction().getActionUrl());
+					secondaryAction.put("title", cardMessage.getSecondaryAction().getButton().getText());
+				}
+
+				event.put("messageType", "card");
+				event.put("title", cardMessage.getTitle());
+				event.put("body", cardMessage.getBody());
+				event.put("primaryAction", primaryAction);
+				event.put("secondaryAction", primaryAction);
+				event.put("portraitImage", cardMessage.getPortraitImageData().getImageUrl());
+				event.put("landscapeImage", cardMessage.getLandscapeImageData().getImageUrl());
+
+				// Set references to later objects that we need to track user interactions
+				_primaryAction = cardMessage.getPrimaryAction();
+				_secondaryAction = cardMessage.getSecondaryAction();
+				_firebaseInAppMessagingDisplayCallbacks = firebaseInAppMessagingDisplayCallbacks;
+
+				callback.callAsync(krollObject, event);
+				return;
+			}
+
+			// TODO: Handle more?
+
+			Log.e("TiInAppMessaging", "Unhandled in app messaging type: " + inAppMessage.getMessageType().name());
+		};
+
+		FirebaseInAppMessaging.getInstance().setMessageDisplayComponent(firebaseInAppMessagingDisplay);
+	}
+
+	@Kroll.method
+	public void impressionDetected() {
+		if (_firebaseInAppMessagingDisplayCallbacks == null) {
+			return;
+		}
+
+		_firebaseInAppMessagingDisplayCallbacks.impressionDetected();
+	}
+
+	@Kroll.method
+	public void displayErrorEncountered() {
+		if (_firebaseInAppMessagingDisplayCallbacks == null) {
+			return;
+		}
+
+		_firebaseInAppMessagingDisplayCallbacks.displayErrorEncountered(FirebaseInAppMessagingDisplayCallbacks.InAppMessagingErrorReason.IMAGE_DISPLAY_ERROR);
+	}
+
+	@Kroll.method
+	public void messageClicked(boolean isPrimaryButton) {
+		if (_firebaseInAppMessagingDisplayCallbacks == null) {
+			return;
+		}
+
+		_firebaseInAppMessagingDisplayCallbacks.messageClicked(isPrimaryButton ? _primaryAction : _secondaryAction);
+	}
+
+	@Kroll.method
+	public void messageDismissed() {
+		if (_firebaseInAppMessagingDisplayCallbacks == null) {
+			return;
+		}
+
+		_firebaseInAppMessagingDisplayCallbacks.messageDismissed(FirebaseInAppMessagingDisplayCallbacks.InAppMessagingDismissType.AUTO);
 	}
 }

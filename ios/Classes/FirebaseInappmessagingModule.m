@@ -87,8 +87,8 @@
     NSDictionary *event = @{
       @"title": _cardMessage.title,
       @"body": _cardMessage.body,
-      @"portraitImage": _cardMessage.portraitImageData.imageURL,
-      @"landscapeImage": _cardMessage.landscapeImageData.imageURL,
+      @"portraitImage": NULL_IF_NIL(_cardMessage.portraitImageData.imageURL),
+      @"landscapeImage": NULL_IF_NIL(_cardMessage.landscapeImageData.imageURL),
       @"primaryAction": @{
         @"title": NULL_IF_NIL(_cardMessage.primaryActionButton.buttonText),
         @"url": NULL_IF_NIL(_cardMessage.primaryActionURL.absoluteString)
@@ -96,7 +96,7 @@
       @"secondaryAction": @{
         @"title": NULL_IF_NIL(_cardMessage.secondaryActionButton.buttonText),
         @"url": NULL_IF_NIL(_cardMessage.secondaryActionURL.absoluteString)
-      },
+      }
     };
 
     [_callback call:@[event] thisObject:self];

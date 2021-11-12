@@ -26,7 +26,8 @@
 		24DD6CFA1134B3F500162E58 /* FirebaseInappmessagingModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* FirebaseInappmessagingModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m */; };
-		3A6C461F26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6C461D26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework */; };
+		4E0FB633273F2E1300407D07 /* FirebaseInAppMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0FB631273F2E1300407D07 /* FirebaseInAppMessaging.xcframework */; };
+		4E0FB634273F2E1300407D07 /* FirebaseABTesting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0FB632273F2E1300407D07 /* FirebaseABTesting.xcframework */; };
 		AA747D9F0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +47,8 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirebaseInappmessagingModuleAssets.h; path = Classes/FirebaseInappmessagingModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirebaseInappmessagingModuleAssets.m; path = Classes/FirebaseInappmessagingModuleAssets.m; sourceTree = "<group>"; };
-		3A6C461D26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInAppMessaging.xcframework; path = platform/FirebaseInAppMessaging.xcframework; sourceTree = "<group>"; };
+		4E0FB631273F2E1300407D07 /* FirebaseInAppMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInAppMessaging.xcframework; path = platform/FirebaseInAppMessaging.xcframework; sourceTree = "<group>"; };
+		4E0FB632273F2E1300407D07 /* FirebaseABTesting.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseABTesting.xcframework; path = platform/FirebaseABTesting.xcframework; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseInappmessaging_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		D2AAC07E0554694100DB518D /* libfirebase.inappmessaging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfirebase.inappmessaging.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,7 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6C461F26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework in Frameworks */,
+				4E0FB634273F2E1300407D07 /* FirebaseABTesting.xcframework in Frameworks */,
+				4E0FB633273F2E1300407D07 /* FirebaseInAppMessaging.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +88,8 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3A6C461D26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework */,
+				4E0FB632273F2E1300407D07 /* FirebaseABTesting.xcframework */,
+				4E0FB631273F2E1300407D07 /* FirebaseInAppMessaging.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

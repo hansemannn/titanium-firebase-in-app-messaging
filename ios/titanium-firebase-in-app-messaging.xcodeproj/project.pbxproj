@@ -26,6 +26,8 @@
 		24DD6CFA1134B3F500162E58 /* FirebaseInappmessagingModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* FirebaseInappmessagingModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m */; };
+		3A4312522901AC8200DBC5CC /* FirebaseInappmessagingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A4312502901AC8200DBC5CC /* FirebaseInappmessagingUtils.h */; };
+		3A4312532901AC8200DBC5CC /* FirebaseInappmessagingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4312512901AC8200DBC5CC /* FirebaseInappmessagingUtils.m */; };
 		3A6C461F26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6C461D26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework */; };
 		AA747D9F0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirebaseInappmessagingModuleAssets.h; path = Classes/FirebaseInappmessagingModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirebaseInappmessagingModuleAssets.m; path = Classes/FirebaseInappmessagingModuleAssets.m; sourceTree = "<group>"; };
+		3A4312502901AC8200DBC5CC /* FirebaseInappmessagingUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirebaseInappmessagingUtils.h; path = Classes/FirebaseInappmessagingUtils.h; sourceTree = "<group>"; };
+		3A4312512901AC8200DBC5CC /* FirebaseInappmessagingUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FirebaseInappmessagingUtils.m; path = Classes/FirebaseInappmessagingUtils.m; sourceTree = "<group>"; };
 		3A6C461D26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInAppMessaging.xcframework; path = platform/FirebaseInAppMessaging.xcframework; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseInappmessaging_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		D2AAC07E0554694100DB518D /* libfirebase.inappmessaging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfirebase.inappmessaging.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,8 @@
 				24DE9E1011C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* FirebaseInappmessagingModule.h */,
 				24DD6CF81134B3F500162E58 /* FirebaseInappmessagingModule.m */,
+				3A4312502901AC8200DBC5CC /* FirebaseInappmessagingUtils.h */,
+				3A4312512901AC8200DBC5CC /* FirebaseInappmessagingUtils.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -120,6 +126,7 @@
 				AA747D9F0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* FirebaseInappmessagingModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h in Headers */,
+				3A4312522901AC8200DBC5CC /* FirebaseInappmessagingUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +200,7 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* FirebaseInappmessagingModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m in Sources */,
+				3A4312532901AC8200DBC5CC /* FirebaseInappmessagingUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

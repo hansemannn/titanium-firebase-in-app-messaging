@@ -16,9 +16,12 @@ import com.google.firebase.inappmessaging.FirebaseInAppMessagingDisplayCallbacks
 import com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar;
 import com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar;
 import com.google.firebase.inappmessaging.model.Action;
+import com.google.firebase.inappmessaging.model.BannerMessage;
 import com.google.firebase.inappmessaging.model.CardMessage;
 import com.google.firebase.inappmessaging.model.ImageData;
+import com.google.firebase.inappmessaging.model.ImageOnlyMessage;
 import com.google.firebase.inappmessaging.model.InAppMessage;
+import com.google.firebase.inappmessaging.model.ModalMessage;
 
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollFunction;
@@ -122,7 +125,7 @@ public class TitaniumFirebaseInAppMessagingModule extends KrollModule implements
 				secondaryAction.put("url", cardMessage.getSecondaryAction().getActionUrl());
 				secondaryAction.put("title", cardMessage.getSecondaryAction().getButton().getText());
 			}
-			event.put("secondaryAction", primaryAction);
+			event.put("secondaryAction", secondaryAction);
 
 			// Images
 			if (portraitImage != null) {
@@ -135,6 +138,67 @@ public class TitaniumFirebaseInAppMessagingModule extends KrollModule implements
 			// Set references to later objects that we need to track user interactions
 			_primaryAction = cardMessage.getPrimaryAction();
 			_secondaryAction = cardMessage.getSecondaryAction();
+			_firebaseInAppMessagingDisplayCallbacks = firebaseInAppMessagingDisplayCallbacks;
+
+			_callback.callAsync(krollObject, event);
+			return;
+		} else if (inAppMessage instanceof BannerMessage) {
+			KrollDict event = new KrollDict();
+
+			BannerMessage bannerMessage = (BannerMessage)inAppMessage;
+			ImageData bannerImage = bannerMessage.getImageData();
+
+			// Basic info
+			event.put("messageType", "banner");
+			event.put("title", bannerMessage.getTitle());
+			event.put("body", bannerMessage.getBody());
+			event.put("action", bannerMessage.getAction());
+
+			if (bannerImage != null) {
+				event.put("image", bannerImage.getImageUrl());
+			}
+
+			// Set references to later objects that we need to track user interactions
+			_firebaseInAppMessagingDisplayCallbacks = firebaseInAppMessagingDisplayCallbacks;
+
+			_callback.callAsync(krollObject, event);
+			return;
+		} else if (inAppMessage instanceof ModalMessage) {
+			KrollDict event = new KrollDict();
+
+			ModalMessage modalMessage = (ModalMessage)inAppMessage;
+			ImageData modalImage = modalMessage.getImageData();
+
+			// Basic info
+			event.put("messageType", "modal");
+			event.put("title", modalMessage.getTitle());
+			event.put("body", modalMessage.getBody());
+			event.put("action", modalMessage.getAction());
+
+			if (modalImage != null) {
+				event.put("image", modalImage.getImageUrl());
+			}
+
+			// Set references to later objects that we need to track user interactions
+			_firebaseInAppMessagingDisplayCallbacks = firebaseInAppMessagingDisplayCallbacks;
+
+			_callback.callAsync(krollObject, event);
+			return;
+		} else if (inAppMessage instanceof ImageOnlyMessage) {
+			KrollDict event = new KrollDict();
+
+			ModalMessage imageOnlyMessage = (ImageOnlyMessage)inAppMessage;
+			ImageData imgOnlyImage = imageOnlyMessage.getImageData();
+
+			// Basic info
+			event.put("messageType", "imageOnly");
+			event.put("action", imageOnlyMessage.getAction());
+
+			if (imgOnlyImage != null) {
+				event.put("image", imgOnlyImage.getImageUrl());
+			}
+
+			// Set references to later objects that we need to track user interactions
 			_firebaseInAppMessagingDisplayCallbacks = firebaseInAppMessagingDisplayCallbacks;
 
 			_callback.callAsync(krollObject, event);

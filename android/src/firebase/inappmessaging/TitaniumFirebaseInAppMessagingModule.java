@@ -187,7 +187,7 @@ public class TitaniumFirebaseInAppMessagingModule extends KrollModule implements
 		} else if (inAppMessage instanceof ImageOnlyMessage) {
 			KrollDict event = new KrollDict();
 
-			ModalMessage imageOnlyMessage = (ImageOnlyMessage)inAppMessage;
+			ImageOnlyMessage imageOnlyMessage = (ImageOnlyMessage)inAppMessage;
 			ImageData imgOnlyImage = imageOnlyMessage.getImageData();
 
 			// Basic info

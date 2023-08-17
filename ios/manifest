@@ -2,12 +2,13 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 4.0.0
+version: 5.0.0
 apiversion: 2
 architectures: arm64 x86_64
 description: titanium-firebase-in-app-messaging
 author: Hans Knoechel
 license: MIT
+mac: false
 copyright: Copyright (c) 2020-present by Hans Knoechel
 
 # these should not be edited
@@ -15,4 +16,4 @@ name: titanium-firebase-in-app-messaging
 moduleid: firebase.inappmessaging
 guid: 1a783c68-e7bc-4be2-8639-d5d014d7a79f
 platform: iphone
-minsdk: 10.0.0
+minsdk: 11.0.0

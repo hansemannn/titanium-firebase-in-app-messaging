@@ -7,3 +7,7 @@ module * { export * }
   link framework "UIKit"
   link "z"
 }
+module FirebaseInAppMessaging.Swift {
+  header "FirebaseInAppMessaging-Swift.h"
+  requires objc
+}

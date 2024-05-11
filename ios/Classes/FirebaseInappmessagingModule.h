@@ -11,6 +11,9 @@
 @interface FirebaseInappmessagingModule : TiModule<FIRInAppMessagingDisplay> {
   KrollCallback *_callback;
   FIRInAppMessagingCardDisplay *_cardMessage;
+  FIRInAppMessagingModalDisplay *_modalMessage;
+  FIRInAppMessagingBannerDisplay *_bannerMessage;
+  FIRInAppMessagingImageOnlyDisplay *_imageOnlyMessage;
   id<FIRInAppMessagingDisplayDelegate> _displayDelegate;
 }
 

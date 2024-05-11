@@ -6,39 +6,16 @@
 	objectVersion = 52;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		24416B8111C4CA220047AFDD /* Build & Test */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
-			buildPhases = (
-				24416B8011C4CA220047AFDD /* ShellScript */,
-			);
-			dependencies = (
-				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
-			);
-			name = "Build & Test";
-			productName = "Build & test";
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		24DD6CF91134B3F500162E58 /* FirebaseInappmessagingModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* FirebaseInappmessagingModule.h */; };
 		24DD6CFA1134B3F500162E58 /* FirebaseInappmessagingModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* FirebaseInappmessagingModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m */; };
+		3A4312522901AC8200DBC5CC /* FirebaseInappmessagingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A4312502901AC8200DBC5CC /* FirebaseInappmessagingUtils.h */; };
+		3A4312532901AC8200DBC5CC /* FirebaseInappmessagingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4312512901AC8200DBC5CC /* FirebaseInappmessagingUtils.m */; };
 		3A6C461F26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6C461D26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework */; };
 		AA747D9F0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = "titanium-firebase-in-app-messaging";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		24DD6CF71134B3F500162E58 /* FirebaseInappmessagingModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirebaseInappmessagingModule.h; path = Classes/FirebaseInappmessagingModule.h; sourceTree = "<group>"; };
@@ -46,6 +23,8 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirebaseInappmessagingModuleAssets.h; path = Classes/FirebaseInappmessagingModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirebaseInappmessagingModuleAssets.m; path = Classes/FirebaseInappmessagingModuleAssets.m; sourceTree = "<group>"; };
+		3A4312502901AC8200DBC5CC /* FirebaseInappmessagingUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirebaseInappmessagingUtils.h; path = Classes/FirebaseInappmessagingUtils.h; sourceTree = "<group>"; };
+		3A4312512901AC8200DBC5CC /* FirebaseInappmessagingUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FirebaseInappmessagingUtils.m; path = Classes/FirebaseInappmessagingUtils.m; sourceTree = "<group>"; };
 		3A6C461D26AEB35E007BDF59 /* FirebaseInAppMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInAppMessaging.xcframework; path = platform/FirebaseInAppMessaging.xcframework; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseInappmessaging_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		D2AAC07E0554694100DB518D /* libfirebase.inappmessaging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfirebase.inappmessaging.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +76,8 @@
 				24DE9E1011C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* FirebaseInappmessagingModule.h */,
 				24DD6CF81134B3F500162E58 /* FirebaseInappmessagingModule.m */,
+				3A4312502901AC8200DBC5CC /* FirebaseInappmessagingUtils.h */,
+				3A4312512901AC8200DBC5CC /* FirebaseInappmessagingUtils.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -120,6 +101,7 @@
 				AA747D9F0F9514B9006C5449 /* FirebaseInappmessaging_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* FirebaseInappmessagingModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.h in Headers */,
+				3A4312522901AC8200DBC5CC /* FirebaseInappmessagingUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,26 +147,9 @@
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* titanium-firebase-in-app-messaging */,
-				24416B8111C4CA220047AFDD /* Build & Test */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		24416B8011C4CA220047AFDD /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here\n\nappc run --project-dir \"${PROJECT_DIR}\"\nexit $?\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2AAC07B0554694100DB518D /* Sources */ = {
@@ -193,18 +158,11 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* FirebaseInappmessagingModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* FirebaseInappmessagingModuleAssets.m in Sources */,
+				3A4312532901AC8200DBC5CC /* FirebaseInappmessagingUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2AAC07D0554694100DB518D /* titanium-firebase-in-app-messaging */;
-			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
@@ -435,28 +393,6 @@
 			};
 			name = Release;
 		};
-		24416B8211C4CA220047AFDD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = "Build & test";
-			};
-			name = Debug;
-		};
-		24416B8311C4CA220047AFDD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = "Build & test";
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -474,15 +410,6 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24416B8211C4CA220047AFDD /* Debug */,
-				24416B8311C4CA220047AFDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

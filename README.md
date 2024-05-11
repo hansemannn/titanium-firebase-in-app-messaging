@@ -10,7 +10,7 @@ thank you!
 
 ## Requirements
 
-- [x] Titanium SDK 9.0.0 or later
+- [x] Titanium SDK 10.0.0 or later
 - [x] `ti.firebasecore` installed
 
 ## Usage

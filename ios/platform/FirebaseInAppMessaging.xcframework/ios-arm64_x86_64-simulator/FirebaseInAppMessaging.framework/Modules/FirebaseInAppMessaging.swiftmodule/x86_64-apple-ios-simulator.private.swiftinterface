@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FirebaseInAppMessaging
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import FirebaseInAppMessaging
@@ -8,32 +8,33 @@ import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @available(iOS 13, tvOS 13, *)
 @available(iOSApplicationExtension, unavailable)
 @available(tvOSApplicationExtension, unavailable)
 extension SwiftUI.View {
-  public func imageOnlyInAppMessage<Content>(closure: @escaping (FirebaseInAppMessaging.InAppMessagingImageOnlyDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
+  public func imageOnlyInAppMessage<Content>(closure: @escaping (FirebaseInAppMessaging.InAppMessagingImageOnlyDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
   
 }
 @available(iOS 13, tvOS 13, *)
 @available(iOSApplicationExtension, unavailable)
 @available(tvOSApplicationExtension, unavailable)
 extension SwiftUI.View {
-  public func bannerInAppMessage<Content>(closure: @escaping (FirebaseInAppMessaging.InAppMessagingBannerDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
+  public func bannerInAppMessage<Content>(closure: @escaping (FirebaseInAppMessaging.InAppMessagingBannerDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
   
 }
 @available(iOS 13, tvOS 13, *)
 @available(iOSApplicationExtension, unavailable)
 @available(tvOSApplicationExtension, unavailable)
 extension SwiftUI.View {
-  public func modalInAppMessage<Content>(closure: @escaping (FirebaseInAppMessaging.InAppMessagingModalDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
+  public func modalInAppMessage<Content>(closure: @escaping (FirebaseInAppMessaging.InAppMessagingModalDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
   
 }
 @available(iOS 13, tvOS 13, *)
 @available(iOSApplicationExtension, unavailable)
 @available(tvOSApplicationExtension, unavailable)
 extension SwiftUI.View {
-  public func cardInAppMessage<Content>(closure: @escaping (FirebaseInAppMessaging.InAppMessagingCardDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
+  public func cardInAppMessage<Content>(closure: @escaping (FirebaseInAppMessaging.InAppMessagingCardDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> Content) -> some SwiftUI.View where Content : SwiftUI.View
   
 }
 @available(iOS 13.0, tvOS 13.0, *)

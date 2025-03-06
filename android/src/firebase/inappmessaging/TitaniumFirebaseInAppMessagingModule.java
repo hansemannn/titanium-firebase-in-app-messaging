@@ -95,7 +95,8 @@ public class TitaniumFirebaseInAppMessagingModule extends KrollModule implements
 		_secondaryAction = null;
 
 		// Handle Cards
-		if (inAppMessage instanceof CardMessage cardMessage) {
+		if (inAppMessage instanceof CardMessage) {
+			CardMessage cardMessage = (CardMessage) inAppMessage;
 			KrollDict event = new KrollDict();
 
             ImageData portraitImage = cardMessage.getPortraitImageData();

@@ -13,9 +13,8 @@ import androidx.annotation.NonNull;
 import com.google.firebase.inappmessaging.FirebaseInAppMessaging;
 import com.google.firebase.inappmessaging.FirebaseInAppMessagingDisplay;
 import com.google.firebase.inappmessaging.FirebaseInAppMessagingDisplayCallbacks;
-import com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar;
-import com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar;
 import com.google.firebase.inappmessaging.model.Action;
+import com.google.firebase.inappmessaging.model.Button;
 import com.google.firebase.inappmessaging.model.CardMessage;
 import com.google.firebase.inappmessaging.model.ImageData;
 import com.google.firebase.inappmessaging.model.InAppMessage;
@@ -24,8 +23,6 @@ import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
-import org.appcelerator.kroll.common.Log;
-import org.appcelerator.titanium.TiApplication;
 
 @Kroll.module(name="TitaniumFirebaseInAppMessaging", id="firebase.inappmessaging")
 public class TitaniumFirebaseInAppMessagingModule extends KrollModule implements FirebaseInAppMessagingDisplay
@@ -99,10 +96,10 @@ public class TitaniumFirebaseInAppMessagingModule extends KrollModule implements
 
 		// Handle Cards
 		if (inAppMessage instanceof CardMessage) {
+			CardMessage cardMessage = (CardMessage) inAppMessage;
 			KrollDict event = new KrollDict();
 
-			CardMessage cardMessage = (CardMessage)inAppMessage;
-			ImageData portraitImage = cardMessage.getPortraitImageData();
+            ImageData portraitImage = cardMessage.getPortraitImageData();
 			ImageData landscapeImage = cardMessage.getLandscapeImageData();
 
 			// Basic info
@@ -113,16 +110,25 @@ public class TitaniumFirebaseInAppMessagingModule extends KrollModule implements
 			// Primary action
 			KrollDict primaryAction = new KrollDict();
 			primaryAction.put("url", cardMessage.getPrimaryAction().getActionUrl());
-			primaryAction.put("title", cardMessage.getPrimaryAction().getButton().getText());
+
+			Button primaryButton = cardMessage.getPrimaryAction().getButton();
+			if (primaryButton != null) {
+				primaryAction.put("title", primaryButton.getText());
+			}
+
 			event.put("primaryAction", primaryAction);
 
 			// Secondary action
 			KrollDict secondaryAction = new KrollDict();
 			if (cardMessage.getSecondaryAction() != null) {
 				secondaryAction.put("url", cardMessage.getSecondaryAction().getActionUrl());
-				secondaryAction.put("title", cardMessage.getSecondaryAction().getButton().getText());
+
+				Button secondaryButton = cardMessage.getSecondaryAction().getButton();
+				if (secondaryButton != null) {
+					secondaryAction.put("title", secondaryButton.getText());
+				}
 			}
-			event.put("secondaryAction", primaryAction);
+			event.put("secondaryAction", secondaryAction);
 
 			// Images
 			if (portraitImage != null) {
@@ -138,11 +144,6 @@ public class TitaniumFirebaseInAppMessagingModule extends KrollModule implements
 			_firebaseInAppMessagingDisplayCallbacks = firebaseInAppMessagingDisplayCallbacks;
 
 			_callback.callAsync(krollObject, event);
-			return;
 		}
-
-		// TODO: Handle more?
-
-		Log.e("TiFIAM", "Unhandled in app messaging type: " + inAppMessage.getMessageType().name());
 	}
 }

@@ -12,6 +12,7 @@
 
 #import "FirebaseInAppMessaging.h"
 #import "FIRInAppMessaging.h"
+#import "FIRInAppMessagingErrors.h"
 #import "FIRInAppMessagingRendering.h"
 
 FOUNDATION_EXPORT double FirebaseInAppMessagingVersionNumber;

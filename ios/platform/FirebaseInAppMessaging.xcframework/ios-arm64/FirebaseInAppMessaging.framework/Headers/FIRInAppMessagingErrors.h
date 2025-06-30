@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,10 +14,7 @@
  * limitations under the License.
  */
 
-#import "FIRInAppMessaging.h"
-#import "FIRInAppMessagingErrors.h"
-#import "FIRInAppMessagingRendering.h"
+#import <Foundation/Foundation.h>
 
-#if __has_include(<FirebaseInAppMessagingDisplay/FirebaseInAppMessagingDisplay.h>)
-#warning The FirebaseInAppMessagingDisplay subspec is deprecated. Please remove FirebaseInAppMessagingDisplay from your Podfile (or delete the framework).
-#endif
+/// Firebase In App Messaging error domain.
+FOUNDATION_EXTERN NSErrorDomain const FIRInAppMessagingErrorDomain NS_SWIFT_NAME(InAppMessagingErrorDomain);

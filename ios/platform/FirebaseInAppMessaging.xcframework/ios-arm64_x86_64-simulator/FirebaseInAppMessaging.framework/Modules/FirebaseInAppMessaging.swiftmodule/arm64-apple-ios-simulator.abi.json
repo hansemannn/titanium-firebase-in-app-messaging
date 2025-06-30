@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "FirebaseInAppMessaging",
+    "printedName": "FirebaseInAppMessaging",
     "children": [
       {
         "kind": "Import",
@@ -661,6 +661,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -724,6 +738,22 @@
           "Available",
           "Available",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -738,34 +768,21 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ModifiedContent",
-                "printedName": "SwiftUI.ModifiedContent<τ_0_0, FirebaseInAppMessaging.ImageOnlyInAppMessageDisplayViewModifier<τ_1_0>>",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImageOnlyInAppMessageDisplayViewModifier",
-                    "printedName": "FirebaseInAppMessaging.ImageOnlyInAppMessageDisplayViewModifier<τ_1_0>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_1_0"
-                      }
-                    ],
-                    "usr": "s:22FirebaseInAppMessaging09ImageOnlybC26MessageDisplayViewModifierV"
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
                   }
-                ],
-                "usr": "s:7SwiftUI15ModifiedContentV"
+                ]
               },
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(FirebaseInAppMessaging.InAppMessagingImageOnlyDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> τ_1_0",
+                "printedName": "(FirebaseInAppMessaging.InAppMessagingImageOnlyDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> τ_1_0",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -775,7 +792,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(FirebaseInAppMessaging.InAppMessagingImageOnlyDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate)",
+                    "printedName": "(FirebaseInAppMessaging.InAppMessagingImageOnlyDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -786,7 +803,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "InAppMessagingDisplayDelegate",
-                        "printedName": "FirebaseInAppMessaging.InAppMessagingDisplayDelegate",
+                        "printedName": "any FirebaseInAppMessaging.InAppMessagingDisplayDelegate",
                         "usr": "c:objc(pl)FIRInAppMessagingDisplayDelegate"
                       }
                     ]
@@ -801,6 +818,8 @@
             "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SwiftUI.View, τ_1_0 : SwiftUI.View>",
             "sugared_genericSig": "<Self, Content where Self : SwiftUI.View, Content : SwiftUI.View>",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -813,34 +832,21 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ModifiedContent",
-                "printedName": "SwiftUI.ModifiedContent<τ_0_0, FirebaseInAppMessaging.BannerInAppMessageDisplayViewModifier<τ_1_0>>",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BannerInAppMessageDisplayViewModifier",
-                    "printedName": "FirebaseInAppMessaging.BannerInAppMessageDisplayViewModifier<τ_1_0>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_1_0"
-                      }
-                    ],
-                    "usr": "s:22FirebaseInAppMessaging06BannerbC26MessageDisplayViewModifierV"
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
                   }
-                ],
-                "usr": "s:7SwiftUI15ModifiedContentV"
+                ]
               },
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(FirebaseInAppMessaging.InAppMessagingBannerDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> τ_1_0",
+                "printedName": "(FirebaseInAppMessaging.InAppMessagingBannerDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> τ_1_0",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -850,7 +856,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(FirebaseInAppMessaging.InAppMessagingBannerDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate)",
+                    "printedName": "(FirebaseInAppMessaging.InAppMessagingBannerDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -861,7 +867,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "InAppMessagingDisplayDelegate",
-                        "printedName": "FirebaseInAppMessaging.InAppMessagingDisplayDelegate",
+                        "printedName": "any FirebaseInAppMessaging.InAppMessagingDisplayDelegate",
                         "usr": "c:objc(pl)FIRInAppMessagingDisplayDelegate"
                       }
                     ]
@@ -876,6 +882,8 @@
             "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SwiftUI.View, τ_1_0 : SwiftUI.View>",
             "sugared_genericSig": "<Self, Content where Self : SwiftUI.View, Content : SwiftUI.View>",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -888,34 +896,21 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ModifiedContent",
-                "printedName": "SwiftUI.ModifiedContent<τ_0_0, FirebaseInAppMessaging.ModalInAppMessageDisplayViewModifier<τ_1_0>>",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ModalInAppMessageDisplayViewModifier",
-                    "printedName": "FirebaseInAppMessaging.ModalInAppMessageDisplayViewModifier<τ_1_0>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_1_0"
-                      }
-                    ],
-                    "usr": "s:22FirebaseInAppMessaging05ModalbC26MessageDisplayViewModifierV"
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
                   }
-                ],
-                "usr": "s:7SwiftUI15ModifiedContentV"
+                ]
               },
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(FirebaseInAppMessaging.InAppMessagingModalDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> τ_1_0",
+                "printedName": "(FirebaseInAppMessaging.InAppMessagingModalDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> τ_1_0",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -925,7 +920,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(FirebaseInAppMessaging.InAppMessagingModalDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate)",
+                    "printedName": "(FirebaseInAppMessaging.InAppMessagingModalDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -936,7 +931,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "InAppMessagingDisplayDelegate",
-                        "printedName": "FirebaseInAppMessaging.InAppMessagingDisplayDelegate",
+                        "printedName": "any FirebaseInAppMessaging.InAppMessagingDisplayDelegate",
                         "usr": "c:objc(pl)FIRInAppMessagingDisplayDelegate"
                       }
                     ]
@@ -951,6 +946,8 @@
             "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SwiftUI.View, τ_1_0 : SwiftUI.View>",
             "sugared_genericSig": "<Self, Content where Self : SwiftUI.View, Content : SwiftUI.View>",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -963,34 +960,21 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ModifiedContent",
-                "printedName": "SwiftUI.ModifiedContent<τ_0_0, FirebaseInAppMessaging.CardInAppMessageDisplayViewModifier<τ_1_0>>",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardInAppMessageDisplayViewModifier",
-                    "printedName": "FirebaseInAppMessaging.CardInAppMessageDisplayViewModifier<τ_1_0>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_1_0"
-                      }
-                    ],
-                    "usr": "s:22FirebaseInAppMessaging04CardbC26MessageDisplayViewModifierV"
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
                   }
-                ],
-                "usr": "s:7SwiftUI15ModifiedContentV"
+                ]
               },
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(FirebaseInAppMessaging.InAppMessagingCardDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> τ_1_0",
+                "printedName": "(FirebaseInAppMessaging.InAppMessagingCardDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate) -> τ_1_0",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1000,7 +984,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(FirebaseInAppMessaging.InAppMessagingCardDisplay, FirebaseInAppMessaging.InAppMessagingDisplayDelegate)",
+                    "printedName": "(FirebaseInAppMessaging.InAppMessagingCardDisplay, any FirebaseInAppMessaging.InAppMessagingDisplayDelegate)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -1011,7 +995,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "InAppMessagingDisplayDelegate",
-                        "printedName": "FirebaseInAppMessaging.InAppMessagingDisplayDelegate",
+                        "printedName": "any FirebaseInAppMessaging.InAppMessagingDisplayDelegate",
                         "usr": "c:objc(pl)FIRInAppMessagingDisplayDelegate"
                       }
                     ]
@@ -1026,6 +1010,8 @@
             "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SwiftUI.View, τ_1_0 : SwiftUI.View>",
             "sugared_genericSig": "<Self, Content where Self : SwiftUI.View, Content : SwiftUI.View>",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -1035,7 +1021,7 @@
         "declKind": "Protocol",
         "usr": "s:7SwiftUI4ViewP",
         "mangledName": "$s7SwiftUI4ViewP",
-        "moduleName": "SwiftUI",
+        "moduleName": "SwiftUICore",
         "genericSig": "<τ_0_0.Body : SwiftUI.View>",
         "sugared_genericSig": "<Self.Body : SwiftUI.View>",
         "intro_Macosx": "10.15",
@@ -1043,171 +1029,158 @@
         "intro_tvOS": "13.0",
         "intro_watchOS": "6.0",
         "declAttributes": [
+          "Preconcurrency",
           "TypeEraser",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
           "Available",
           "Available",
           "Available",
-          "Available"
+          "Available",
+          "Custom"
         ],
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 930,
       "length": 23,
       "value": "\"Card message campaign\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 1004,
       "length": 25,
       "value": "\"Title for modal message\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 1080,
       "length": 24,
       "value": "\"Body for modal message\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 1328,
       "length": 11,
       "value": "\"rectangle\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 1423,
       "length": 8,
       "value": "\"square\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 1495,
       "length": 11,
       "value": "\"Click me!\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 1815,
       "length": 9,
       "value": "\"Dismiss\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2374,
-      "length": 30,
-      "value": "\"https:\/\/firebase.google.com\/\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 2673,
-      "length": 20,
-      "value": "\"http:\/\/fakeurl.com\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 4075,
       "length": 24,
       "value": "\"Modal message campaign\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 4151,
       "length": 25,
       "value": "\"Title for modal message\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 4228,
       "length": 24,
       "value": "\"Body for modal message\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 4472,
       "length": 11,
       "value": "\"rectangle\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
       "offset": 4542,
       "length": 11,
       "value": "\"Click me!\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 5047,
-      "length": 30,
-      "value": "\"https:\/\/firebase.google.com\/\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 5911,
+      "offset": 5898,
       "length": 25,
       "value": "\"Banner message campaign\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 5989,
+      "offset": 5976,
       "length": 26,
       "value": "\"Title for banner message\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 6068,
+      "offset": 6055,
       "length": 25,
       "value": "\"Body for banner message\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 6316,
+      "offset": 6303,
       "length": 8,
       "value": "\"square\""
     },
     {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 6624,
-      "length": 30,
-      "value": "\"https:\/\/firebase.google.com\/\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 7018,
+      "offset": 7005,
       "length": 29,
       "value": "\"Image-only message campaign\""
-    },
-    {
-      "filePath": "\/var\/folders\/z4\/sx941vhj3jd2jb9_gwftzctc0000gn\/T\/ZipRelease\/2024-04-24T04-01-38\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
-      "kind": "StringLiteral",
-      "offset": 7458,
-      "length": 30,
-      "value": "\"https:\/\/firebase.google.com\/\""
     }
   ]
 }

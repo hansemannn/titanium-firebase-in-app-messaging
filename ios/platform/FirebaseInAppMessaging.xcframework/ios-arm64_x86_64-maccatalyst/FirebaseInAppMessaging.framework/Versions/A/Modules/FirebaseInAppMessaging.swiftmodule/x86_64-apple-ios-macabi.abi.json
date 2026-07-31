@@ -729,12 +729,8 @@
         "usr": "s:22FirebaseInAppMessaging0bcD14PreviewHelpersO",
         "mangledName": "$s22FirebaseInAppMessaging0bcD14PreviewHelpersO",
         "moduleName": "FirebaseInAppMessaging",
-        "intro_iOS": "13.0",
-        "intro_tvOS": "13.0",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "Available",
           "Available",
           "RawDocComment"
@@ -1031,6 +1027,7 @@
         "declAttributes": [
           "Preconcurrency",
           "TypeEraser",
+          "TypeEraser",
           "OriginallyDefinedIn",
           "OriginallyDefinedIn",
           "OriginallyDefinedIn",
@@ -1064,121 +1061,121 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 930,
+      "offset": 895,
       "length": 23,
       "value": "\"Card message campaign\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 1004,
+      "offset": 969,
       "length": 25,
       "value": "\"Title for modal message\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 1080,
+      "offset": 1045,
       "length": 24,
       "value": "\"Body for modal message\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 1328,
+      "offset": 1293,
       "length": 11,
       "value": "\"rectangle\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 1423,
+      "offset": 1388,
       "length": 8,
       "value": "\"square\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 1495,
+      "offset": 1460,
       "length": 11,
       "value": "\"Click me!\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 1815,
+      "offset": 1780,
       "length": 9,
       "value": "\"Dismiss\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 4075,
+      "offset": 4040,
       "length": 24,
       "value": "\"Modal message campaign\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 4151,
+      "offset": 4116,
       "length": 25,
       "value": "\"Title for modal message\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 4228,
+      "offset": 4193,
       "length": 24,
       "value": "\"Body for modal message\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 4472,
+      "offset": 4437,
       "length": 11,
       "value": "\"rectangle\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 4542,
+      "offset": 4507,
       "length": 11,
       "value": "\"Click me!\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 5898,
+      "offset": 5863,
       "length": 25,
       "value": "\"Banner message campaign\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 5976,
+      "offset": 5941,
       "length": 26,
       "value": "\"Title for banner message\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 6055,
+      "offset": 6020,
       "length": 25,
       "value": "\"Body for banner message\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 6303,
+      "offset": 6268,
       "length": 8,
       "value": "\"square\""
     },
     {
-      "filePath": "\/var\/folders\/y6\/nj790rtn62lfktb1sh__79hc0000gn\/T\/ZipRelease\/2025-06-18T04-06-35\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
+      "filePath": "\/var\/folders\/8j\/sfr9qqcj73j4p6nhwcfpr0th0000gn\/T\/ZipRelease\/2026-07-22T05-10-08\/project-ios\/Pods\/FirebaseInAppMessaging\/FirebaseInAppMessaging\/Swift\/Source\/SwiftUIPreviewHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 7005,
+      "offset": 6970,
       "length": 29,
       "value": "\"Image-only message campaign\""
     }
